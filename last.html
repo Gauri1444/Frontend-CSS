@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link rel="stylesheet" type="text/css" href="c.css">
+</head>
+<body>
+
+<form action="s" method="post" id="s">
+
+  <label for="quantity">Quantity Of Books :</label>
+  <input type="number" id="quantity" name="quantity" min="1" max="2">
+<br><br>
+<label for="date">Issued Date :</label>
+  <input type="date" name="date" id="d"><br><br>
+
+<script>
+{
+
+function myFunction() {
+  var x = document.createElement("INPUT");
+  x.setAttribute("type", "Date");
+  x.setAttribute("value", "2019-01-01");
+  document.body.appendChild(x);
+}
+</script>
+<br/>
+<label for="ddate">Due Date :</label>
+  <input type="date" name="date" id="dd">
+<br>
+<br>
+<br>
+
+<label for="cc">Charges :</label>
+  <input type="number" name="cc" id="c"><br><br>
+<button type="c" value="Next" id="button" onClick="alert('Successfully Done')">Next</button>
+<br>
+<br>
+</form>
+<a href="search.html" style="color: #0B0B61">Back</a>
+</body>
+</html>

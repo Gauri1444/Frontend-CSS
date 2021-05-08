@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<head>
+<h1 align="center">WELCOME TO ONLINE LIBRARY</h1>
+<title>Library</title>
+
+<link rel="stylesheet" type="text/css" href="home.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body bgcolor="#E6E6FA">
+<ul class="navbar">
+  <li><a href="home1.html"><strong>HOME</strong></a></li>
+  <li><a href="comic.html"><strong>COMICS</strong></a></li>
+  <li><a href="fairy.html"><strong>FAIRY TALES</strong></a></li>
+  <li><a href="science.html"><strong>SCIENCE</strong></a></li>
+  <li style="float:right"><a href="login.html"><strong>Login</strong></a></li>
+<li style="float:right"><a href="signup.html"><strong>SignUp</strong></a></li>
+</ul>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="https://eventsyard.com/wp-content/uploads/2019/02/world-book-day-quotes-to-inspire.jpg" style="width:100%">
+  <div class="text"><strong>Books Quotes</strong></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="https://c.ndtvimg.com/2019-04/f43pgvq_world-book-day_625x300_23_April_19.jpg" style="width:100%">
+ <div class="text"><strong>Books Quotes</strong></div> 
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="https://sweatpantsandcoffee.com/wp-content/uploads/2018/01/CS-Lewis-tea-book-reading-quote-600x399.png" style="width:100%">
+<div class="text">Books Quotes</div>
+</div>
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+<marquee>Search Your Favourite Books Here</marquee>
+<div class="search">
+<input type="text" placeholder="Search..">
+<button type="submit"><strong>Submit</strong></button>
+</div>
+<br><br>
+<div class="st">
+<strong> LATEST BOOKS</strong>
+</div>
+
+<div class="header"> 
+<div class="row"> 
+  <div class="column">
+    <img src="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1573837152-41bsvxNUSdL.jpg" style="width:75%">
+   
+  </div>
+ <div class="column">
+  <img src="https://m.media-amazon.com/images/I/51doC7oWaPL.jpg" style="width:73%">
+ 
+  </div>  
+  <div class="column">
+  <img src="https://toppsta.com/images/covers/2/3/8/1/9781408342381.jpg" style="width:72%">
+  
+  </div>
+<div class="column">
+  <img src="https://media.wired.com/photos/5dfc0b15a03b9b0008afa1a0/master/w_1600%2Cc_limit/Science_books_9781328879981_hres.jpg" style="width:73%">
+  
+  </div>
+
+
+
+  </div>
+</body>
+</html> 
